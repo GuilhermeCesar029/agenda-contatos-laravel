@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+//rota principal
+Route::get('/', 'HomeController@index')->name('site.home');
+
+//Rostas para login
+Route::get('/login', 'LoginController@index')->name('site.login');
+Route::post('/login/entrar', 'LoginController@entrar')->name('site.login.entrar');
+Route::get('/login/sair', 'LoginController@sair')->name('site.login.sair');
