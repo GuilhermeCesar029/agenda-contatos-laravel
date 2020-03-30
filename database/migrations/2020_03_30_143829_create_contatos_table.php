@@ -13,8 +13,8 @@ class CreateContatosTable extends Migration
      */
     public function up()
     {
-        Schema::create('_contatos', function (Blueprint $table) {
-            $table->bigIncrements('id');
+        Schema::create('contatos', function (Blueprint $table) {
+            $table->increments('id');
             $table->string('nome', 70);
             $table->string('sobrenome', 70);
             $table->char('telefone', 15);
@@ -33,6 +33,6 @@ class CreateContatosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_contatos');
+        Schema::dropIfExists('contatos');
     }
 }
