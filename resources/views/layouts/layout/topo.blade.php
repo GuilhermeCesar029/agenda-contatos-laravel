@@ -10,14 +10,14 @@
 <body>
   <nav>
     <div class="nav-wrapper cyan ">
-      <a href="{{route('site.home')}}" class="brand-logo"> &ensp; Agenda de Contatos</a>
+      <a href="{{route('admin.contatos.index')}}" class="brand-logo"> &ensp; Agenda de Contatos</a>
       <ul class="right hide-on-med-and-down">
           @if(Auth::guest())
             <li>
-              <a class="waves-effect waves-light btn" href="{{route('site.login')}}">Fazer Login</a>
+              <a class="waves-effect waves-light btn pulse" href="{{route('site.login')}}">Fazer Login</a>
             </li>
             <li>
-              <a class="waves-effect waves-light btn" href="{{route('site.cadastro')}}">Cadastre-se</a>
+              <a class="waves-effect waves-light btn pulse" href="{{route('site.cadastro')}}">Cadastre-se</a>
             </li>
           @else 
             <li>
@@ -30,3 +30,4 @@
       </ul>
     </div>
   </nav>
+  

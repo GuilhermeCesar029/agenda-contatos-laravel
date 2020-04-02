@@ -34,7 +34,10 @@
                                 &emsp;<a href="{{route('admin.contatos.info', $registro->id)}}">
                                         <i class="material-icons">visibility</i>
                                       </a>
-                                      
+                                &emsp;<a href="{{route('admin.contatos.deletar', $registro->id)}}" >
+                                        <i class="material-icons">delete</i>
+
+                                      </a>                                        
                             </td>                            
                         </tr>                            
                     @endforeach

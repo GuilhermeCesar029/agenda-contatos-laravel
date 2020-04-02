@@ -32,6 +32,7 @@ Route::group(['middleware'=>'auth'], function(){
     Route::get('/admin/contatos/info/{id}', 'ContatosController@info')->name('admin.contatos.info');
     Route::get('/admins/contatos/editar/{id}', 'ContatosController@editar')->name('admin.contatos.editar');
     Route::put('/admins/contatos/atualizar/{id}', 'ContatosController@atualizar')->name('admin.contatos.atualizar');
+    Route::get('/admins/contatos/deletar/{id}', 'ContatosController@deletar')->name('admin.contatos.deletar');
 
     
 });

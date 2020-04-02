@@ -5,6 +5,7 @@
             $(document).ready(function(){
                 Materialize.updateTextFields();
                 $(".button-collapse").sideNav();
+                $('.modal').modal();
             });         
         </script>
     </body>

@@ -48,4 +48,9 @@ class ContatosController extends Controller
         return redirect()->route('admin.contatos.index');
     }
 
+    public function deletar($id){
+        Contatos::find($id)->delete();
+        return redirect()->route('admin.contatos.index');
+    }
+
 }
