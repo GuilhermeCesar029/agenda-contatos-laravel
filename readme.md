@@ -4,14 +4,19 @@ Laravel 5.8
 Instalação direta
 
 git clone https://github.com/GuilhermeCesar029/Agenda-Contatos-Laravel
+
 composer install
+
 cp .env.example .env  
+
 php artisan migrate:refresh --seed
+
 php artisan key:generate
+
 php artisan serve
 
 
-Instalação passo a passo
+Instalação passo a passo:
 
     1. Clone o repositório
 
